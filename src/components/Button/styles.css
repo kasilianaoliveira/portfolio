@@ -1,0 +1,20 @@
+.button-download {
+  border: 0;
+  border-radius: 10px;
+
+  padding: 10px 16px;
+
+  background: var(--linear-color);
+  color: white;
+}
+
+.button-download a {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 16px;
+
+}
+
+.button-download:hover {
+  opacity: .8;
+}
