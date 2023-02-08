@@ -1,0 +1,49 @@
+.title {
+  line-height: 4.375rem;
+  font-size: 4.25rem;
+  margin-bottom: 1.75rem;
+
+}
+
+
+.title .pink {
+  color: var(--pink);
+}
+
+.title .purple {
+  color: var(--purple);
+}
+
+
+@media (max-width: 1025px) {
+  .title {
+    font-size: 54px;
+    line-height: 4rem;
+
+  }
+}
+
+@media (max-width: 810px) {
+
+  .title {
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .title {
+    word-wrap: normal;
+    line-height: 2.5rem;
+    font-size: 36px;
+
+
+  }
+
+}
+
+@media (max-width: 481px) {
+  .title {
+    text-align: center;
+  }
+}
