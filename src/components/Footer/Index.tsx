@@ -30,7 +30,7 @@ export const Footer = () => {
         </ul>
       </div>
       <div className="teste">
-        <a href="#inicio">  <FaAngleDoubleUp className="icon-up" /></a>
+        {/* <a href="#home">  <FaAngleDoubleUp className="icon-up" /></a> */}
       </div>
       <p>© 2023 Kasiliana Oliveira - Todos os direitos reservados</p>
     </div >
