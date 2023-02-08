@@ -110,10 +110,7 @@
   }
 
   .cards-services .cards-services-item {
-    width: 80%;
-    /* height: 453px; */
-
-
+    width: 100%;
   }
 
 }
