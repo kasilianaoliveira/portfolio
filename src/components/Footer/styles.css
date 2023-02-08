@@ -1,0 +1,63 @@
+.container-footer {
+  position: relative;
+
+}
+
+.container-footer::after {
+  content: "";
+  position: absolute;
+  background: var(--linear-color);
+  display: block;
+  height: 8px;
+  width: 100%;
+  bottom: -30px;
+}
+
+.social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  gap: 1.5rem;
+}
+
+.social-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--gray-300);
+  height: 48px;
+  width: 48px;
+
+  border-radius: 50%;
+
+}
+
+.social-item {
+  cursor: pointer;
+
+  height: 28px;
+  width: 28px;
+}
+
+.container-footer p {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.teste {
+  position: relative;
+}
+
+.icon-up {
+  cursor: pointer;
+
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  right: 90px;
+  bottom: 0;
+
+  transition-duration: 0.5s
+}
