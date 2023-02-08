@@ -1,0 +1,57 @@
+:root {
+  --background: #3D3D3D;
+  --black: #202020;
+  --black-100: #3D3D3D66;
+  --black-200: #27272766;
+  --black-300: #272727;
+  --gray-100: #E0E0E0;
+  --gray-200: #fffbfb4f;
+  --gray-300: #393E46;
+  --linear-color: linear-gradient(89.81deg, #595EF2 2.78%, #E21A7B 92.22%);
+  --blue: #6757E6;
+  --purple: #A03BB4;
+  --pink: #DE1C7F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 0.5rem;
+  border: 0.25rem solid var(--black);
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--black);
+  color: var(--gray-100);
+}
+
+body,
+input,
+select,
+textarea {
+  font: 400 16px "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
