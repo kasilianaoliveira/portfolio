@@ -1,0 +1,55 @@
+.container {
+  max-width: 1200px;
+  margin: 6.25rem auto;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+
+}
+
+img {
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  width: 50%;
+
+}
+
+
+@media (max-width: 1025px) {
+
+  img {
+    width: 21.875rem;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+
+@media (max-width: 769px) {
+
+  img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 481px) {
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
