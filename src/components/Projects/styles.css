@@ -1,0 +1,89 @@
+.container-projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+
+  position: relative;
+}
+
+.title-detail-projects {
+  position: absolute;
+  top: -1.25rem;
+  left: -2.5rem;
+  font-size: 9.375rem;
+  font-weight: 700;
+
+  color: var(--black-100);
+}
+
+.container-projects h1 {
+  text-align: center;
+  z-index: 2;
+}
+
+.cards-projects {
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+
+}
+
+.card {
+  border-radius: 20px;
+  width: 360px;
+  background: var(--black-300);
+}
+
+
+.card .img-card {
+  width: 360px;
+
+}
+
+.card h3,
+.card span {
+  font-weight: 700;
+}
+
+.card h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.3125rem;
+  font-size: 1.125rem;
+}
+
+.card .info {
+  width: 6.25rem;
+}
+
+.card span {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  gap: 14px;
+}
+
+.card span img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card div {
+  margin-left: 1.5rem;
+}
+
+.card-open-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.detail-project {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 20px;
+}
