@@ -6,7 +6,7 @@ import { Title } from '../Title/Index';
 import "./styles.css"
 export const About = () => {
   return (
-    <article className='container-about'>
+    <article className='container-about' id='about'>
       <div className='about'>
         <span className='title-detail'>SOBRE</span>
 

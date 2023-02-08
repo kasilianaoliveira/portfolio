@@ -11,7 +11,7 @@ import "./styles.css"
 
 export const Projects = () => {
   return (
-    <article className='container-projects'>
+    <article className='container-projects' id='projects'>
       <span className='title-detail-projects'>PROJETOS</span>
       <Title title='Projetos em destaque' />
       <div className="cards-projects">
