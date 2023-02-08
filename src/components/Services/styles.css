@@ -77,3 +77,43 @@
   left: 1.25rem;
   bottom: -150px;
 }
+
+
+@media (max-width: 1025px) {
+
+  .title-detail-services {
+    display: none;
+  }
+
+  .detail-project-services {
+    width: 80px;
+
+    right: 95%;
+    bottom: -150px;
+  }
+}
+
+@media (max-width: 769px) {
+  .content-services h1 {
+    font-size: 44px;
+  }
+
+  .cards-services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 481px) {
+  .detail-project-services {
+    display: none;
+  }
+
+  .cards-services .cards-services-item {
+    width: 80%;
+    /* height: 453px; */
+
+
+  }
+
+}

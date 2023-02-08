@@ -61,3 +61,12 @@
 
   transition-duration: 0.5s
 }
+
+
+@media (max-width: 769px) {
+  .icon-up {
+    display: none;
+
+    transition-duration: 0.5s
+  }
+}

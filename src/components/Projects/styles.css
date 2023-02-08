@@ -34,13 +34,14 @@
 
 .card {
   border-radius: 20px;
-  width: 360px;
+  width: 30%;
   background: var(--black-300);
 }
 
 
 .card .img-card {
-  width: 360px;
+  width: 100%;
+
 
 }
 
@@ -86,4 +87,62 @@
   position: absolute;
   right: 1.25rem;
   bottom: 20px;
+}
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1025px) {
+  .title-detail-projects {
+    display: none;
+  }
+
+  .detail-project {
+    width: 80px;
+
+    right: 50px;
+  }
+
+  .card span {
+    font-size: 12px;
+    /* gap: 5px; */
+  }
+
+}
+
+@media (max-width: 769px) {
+
+
+  .content-services h1 {
+    font-size: 44px;
+  }
+
+  .card-open-project {
+    justify-content: center;
+  }
+
+  .card-open-project .open-project-item {
+    display: none;
+  }
+}
+
+@media (max-width: 481px) {
+  .cards-projects {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+
+  .cards-projects button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .detail-project {
+    display: none;
+  }
 }

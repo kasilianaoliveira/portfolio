@@ -25,7 +25,7 @@ export const Projects = () => {
             </span>
           </div>
           <div className='card-open-project'>
-            <span>
+            <span className='open-project-item'>
               Veja mais
               <img src={ArrowImg} alt="" />
             </span>
@@ -42,7 +42,7 @@ export const Projects = () => {
             </span>
           </div>
           <div className='card-open-project'>
-            <span>
+            <span className='open-project-item'>
               Veja mais
               <img src={ArrowImg} alt="" />
             </span>
@@ -59,7 +59,7 @@ export const Projects = () => {
             </span>
           </div>
           <div className='card-open-project'>
-            <span>
+            <span className='open-project-item'>
               Veja mais
               <img src={ArrowImg} alt="" />
             </span>
