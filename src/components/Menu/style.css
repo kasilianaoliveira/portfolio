@@ -11,6 +11,9 @@ header {
 
   z-index: 9999;
 
+  animation: menu-close 0.5s;
+
+
 }
 
 header nav {
@@ -26,6 +29,7 @@ header nav {
   justify-content: center;
   align-items: center;
   gap: 40px;
+
 }
 
 .active-button {
@@ -44,10 +48,12 @@ header nav {
 
   .activeBackground {
     height: 100vh;
+    animation: menu-open 0.5s;
   }
 
   .menu-list {
     display: none;
+    opacity: 0;
   }
 
   .active {
@@ -68,4 +74,28 @@ header nav {
     height: 40px;
 
   }
+
+}
+
+@keyframes menu-open {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100vh;
+  }
+
+}
+
+
+@keyframes menu-close {
+  from {
+    height: 100vh;
+  }
+
+  to {
+    height: 0;
+  }
+
 }
