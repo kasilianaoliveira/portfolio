@@ -28,7 +28,11 @@ header nav {
   gap: 40px;
 }
 
-.icon-burguer {
+.active-button {
+  display: none;
+}
+
+.off-button {
   display: none;
 }
 
@@ -54,10 +58,6 @@ header nav {
     align-items: center;
     gap: 40px;
     margin-top: 30px;
-  }
-
-  .off-button {
-    display: none;
   }
 
   .active-button {
