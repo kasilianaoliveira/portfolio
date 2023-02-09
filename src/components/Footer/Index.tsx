@@ -8,7 +8,7 @@ import "./styles.css"
 
 export const Footer = () => {
   return (
-    <div className="container-footer">
+    <div className="container-footer" id="contact">
       <div className="social-media">
         <ul>
           <li>
