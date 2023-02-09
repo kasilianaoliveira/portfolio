@@ -24,6 +24,7 @@ export const Projects = () => {
               UI Design
             </span>
           </div>
+          <p>sdfsdd</p>
           <div className='card-open-project'>
             <span className='open-project-item'>
               Veja mais
