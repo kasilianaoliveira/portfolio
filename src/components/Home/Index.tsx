@@ -12,7 +12,7 @@ export const Home = () => {
 
     <article className='container' id='home'>
 
-      <img src={girlImg} alt="Garota em um computador" />
+      <img src={girlImg} alt="Garota em um computador" className="moving-image " />
       <div className='content'>
         <Title title='Desenvolvedora Front End & UI Designer' isPink />
         <Button hrefOption={portfolioPDF} title="Download CV" />

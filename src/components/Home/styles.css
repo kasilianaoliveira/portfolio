@@ -14,6 +14,26 @@ img {
   flex: 1;
 }
 
+.moving-image {
+  position: relative;
+  animation: move-up-down 2s infinite ease-in-out;
+}
+
+@keyframes move-up-down {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: -10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+
 .content {
   flex: 1;
   width: 50%;
