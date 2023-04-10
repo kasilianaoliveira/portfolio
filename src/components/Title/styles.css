@@ -14,6 +14,17 @@
   color: var(--purple);
 }
 
+.pink:after {
+  content: '';
+  display: inline-block;
+  background-color: var(--pink);
+  margin-left: 2px;
+  height: 50px;
+  width: 5px;
+  border-radius: 2px;
+  animation: cursor 0.8s infinite;
+}
+
 
 @media (max-width: 1025px) {
   .title {
@@ -45,5 +56,32 @@
 @media (max-width: 481px) {
   .title {
     text-align: center;
+  }
+
+  .pink:after {
+    height: 30px;
+    width: 3px;
+    border-radius: 0px;
+  }
+}
+
+
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

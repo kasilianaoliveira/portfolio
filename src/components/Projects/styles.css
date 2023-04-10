@@ -128,6 +128,11 @@
 }
 
 @media (max-width: 481px) {
+  .container-projects {
+
+    height: 100%;
+  }
+
   .cards-projects {
     flex-direction: column;
     align-items: center;

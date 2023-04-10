@@ -94,6 +94,11 @@
 }
 
 @media (max-width: 769px) {
+  .container-services {
+    height: 100%;
+
+  }
+
   .content-services h1 {
     font-size: 44px;
   }
@@ -105,6 +110,8 @@
 }
 
 @media (max-width: 481px) {
+
+
   .detail-project-services {
     display: none;
   }
