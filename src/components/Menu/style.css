@@ -10,9 +10,8 @@ header {
   z-index: 999;
   top: 0;
   background: var(--black);
+  border-bottom: 1px solid var(--black-100);
   transition: background 0.3s;
-  /* animation: menu-close 0.3s; */
-  /* background-color: rgb(115, 162, 202); */
 }
 
 .menu {
