@@ -1,6 +1,8 @@
 .container-about {
   background: var(--background);
-  padding: 6.375rem 0px;
+  /* margin-top: 10rem; */
+  padding: 10rem 0px;
+  height: 80vh;
 }
 
 

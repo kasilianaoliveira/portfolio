@@ -1,10 +1,11 @@
 .container {
   max-width: 1200px;
-  margin: 6.25rem auto;
+  height: 100vh;
+  margin: 2rem auto;
 
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   padding: 0 20px;
 
 }

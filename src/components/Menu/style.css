@@ -1,85 +1,122 @@
 header {
-  padding: 0px 30px;
-  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 100%;
-  margin: 0 auto;
+  height: 50px;
 
   position: fixed;
+  z-index: 999;
   top: 0;
-  left: 0;
-
-  z-index: 9999;
-
-  animation: menu-close 0.5s;
-
-
+  background: var(--black);
+  transition: background 0.3s;
+  /* animation: menu-close 0.3s; */
+  /* background-color: rgb(115, 162, 202); */
 }
 
-header nav {
-  height: 100px;
+.menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap
+  gap: 30px;
 }
 
-.menu-list {
+.menu-active {
+  display: none;
+}
+
+.off-menu {
+  display: none;
+}
+
+.menu-items {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
+  gap: 30px;
 
 }
 
-.active-button {
-  display: none;
-}
 
-.off-button {
-  display: none;
-}
+@media (max-width: 560px) {
 
-@media (max-width: 481px) {
 
-  header nav {
-    height: 10px;
-  }
-
-  .activeBackground {
-    height: 100vh;
+  .header-active {
+    position: fixed;
+    display: flex;
+    align-items: start;
+    right: 0;
+    width: 60%;
+    height: 100%;
     animation: menu-open 0.5s;
+
   }
 
-  .menu-list {
-    display: none;
-    opacity: 0;
-  }
-
-  .active {
+  .navigation {
+    width: 100%;
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 30px;
+    margin: 10px 20px;
   }
 
-  .active-button {
-    display: block;
-    margin-left: 90%;
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
-
+  .menu-active {
+    display: flex;
+    align-self: flex-end;
+    height: 30px;
+    width: 30px;
   }
 
+  .menu {
+    display: none;
+  }
+
+  .menu-items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @keyframes menu-open {
   from {
-    height: 0;
+    height: 50px;
+  }
+
+  to {
+    height: 100%;
+  }
+
+}
+
+/* @keyframes menu-close {
+  from {
+    display: flex;
+    align-items: start;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+
+  to {
+    height: 50px;
+  }
+
+} */
+
+/* 
+.activeBackground {
+  margin-left: 3.125rem;
+  height: 100vh;
+  animation: menu-open 0.5s;
+}
+
+
+
+@keyframes menu-open {
+  from {
+    height: 10px;
   }
 
   to {
@@ -95,7 +132,7 @@ header nav {
   }
 
   to {
-    height: 0;
+    height: 10px;
   }
 
-}
+} */

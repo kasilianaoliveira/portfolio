@@ -18,29 +18,12 @@ export const Projects = () => {
         <div className="card">
           <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
           <div className='card-infos'>
-            <h3>Portfolio website UI</h3>
+            <h3>E-commerce</h3>
             <span className='info'>
               <img src={GridImg} alt="" />
-              UI Design
+              Desenvolvimento
             </span>
-          </div>
-          <p>sdfsdd</p>
-          <div className='card-open-project'>
-            <span className='open-project-item'>
-              Veja mais
-              <img src={ArrowImg} alt="" />
-            </span>
-            <Button title="Abrir projeto" hrefOption='teste' />
-          </div>
-        </div>
-        <div className="card">
-          <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
-          <div className='card-infos'>
-            <h3>Portfolio website UI</h3>
-            <span className='info'>
-              <img src={GridImg} alt="" />
-              UI Design
-            </span>
+            {/* <p>React - typescript - firebase</p> */}
           </div>
           <div className='card-open-project'>
             <span className='open-project-item'>
@@ -53,10 +36,27 @@ export const Projects = () => {
         <div className="card">
           <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
           <div className='card-infos'>
-            <h3>Portfolio website UI</h3>
+            <h3>Relife</h3>
             <span className='info'>
               <img src={GridImg} alt="" />
-              UI Design
+              Desenvolvimento
+            </span>
+          </div>
+          <div className='card-open-project'>
+            <span className='open-project-item'>
+              Veja mais
+              <img src={ArrowImg} alt="" />
+            </span>
+            <Button title="Abrir projeto" hrefOption='teste' />
+          </div>
+        </div>
+        <div className="card">
+          <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
+          <div className='card-infos'>
+            <h3>Restaurante online</h3>
+            <span className='info'>
+              <img src={GridImg} alt="" />
+              Desenvolvimento
             </span>
           </div>
           <div className='card-open-project'>
