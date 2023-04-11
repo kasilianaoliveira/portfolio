@@ -3,15 +3,37 @@ header {
   align-items: center;
   justify-content: center;
 
+
   width: 100%;
   height: 50px;
+
+  background: var(--black);
 
   position: fixed;
   z-index: 999;
   top: 0;
-  background: var(--black);
   border-bottom: 1px solid var(--black-100);
   transition: background 0.3s;
+}
+
+.container-header {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  background: linear-gradient(89.81deg, #595EF2 2.78%, #E21A7B 92.22%);
+  margin-left: 20px;
+
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
 }
 
 .menu {
@@ -29,6 +51,7 @@ header {
   display: none;
 }
 
+
 .menu-items {
   display: flex;
   align-items: center;
@@ -37,9 +60,19 @@ header {
 
 }
 
+@media (max-width: 769px) {
+  .container-header {
+    justify-content: center;
+    gap: 30px;
+  }
+}
 
 @media (max-width: 560px) {
 
+
+  .logo-inactive {
+    display: none;
+  }
 
   .header-active {
     position: fixed;
@@ -49,6 +82,8 @@ header {
     width: 60%;
     height: 100%;
     animation: menu-open 0.5s;
+    background: var(--black);
+
 
   }
 
@@ -100,38 +135,6 @@ header {
 
   to {
     height: 50px;
-  }
-
-} */
-
-/* 
-.activeBackground {
-  margin-left: 3.125rem;
-  height: 100vh;
-  animation: menu-open 0.5s;
-}
-
-
-
-@keyframes menu-open {
-  from {
-    height: 10px;
-  }
-
-  to {
-    height: 100vh;
-  }
-
-}
-
-
-@keyframes menu-close {
-  from {
-    height: 100vh;
-  }
-
-  to {
-    height: 10px;
   }
 
 } */

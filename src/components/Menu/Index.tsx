@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { HiMenuAlt4 } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
-import "./style.css"
 import { useState } from 'react';
+import LogoImg from "../../assets/letras.svg"
+import "./style.css"
 
 export const Menu = () => {
 
@@ -17,21 +18,24 @@ export const Menu = () => {
   return (
     <header id='inicio' className={activeMobile ? 'header-active' : 'header'}>
 
-      {/* <HiMenuAlt4 className={activeMobile ? 'off-button' : 'active-button'} onClick={handleClickActiveButton} /> */}
-      {/* <HiOutlineX className={activeMobile ? 'active-button outLineX' : 'off-button'} onClick={handleClickActiveButton} /> */}
-      {/* className={activeMobile ? 'menu-active' : 'off-menu'}  */}
-
-      <nav className='navigation'>
-        <HiMenuAlt4 className={activeMobile ? 'off-menu' : 'menu-active'} onClick={handleClickActiveButton} />
-        <HiOutlineX className={activeMobile ? 'menu-active' : 'off-menu'} onClick={handleClickActiveButton} />
-        <ul className={activeMobile ? 'menu-items' : 'menu'}>
-          <li className='list-item'><a href="#home">Inicio</a></li>
-          <li className='list-item'><a href="#about">Sobre</a></li>
-          <li className='list-item'><a href="#projects">Projetos</a></li>
-          <li className='list-item'><a href="#services">Serviços</a></li>
-          <li className='list-item'><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+      <div className="container-header">
+        <div className={activeMobile ? 'logo-inactive' : 'logo'}>
+          <a href='/'>
+            <img src={LogoImg} alt="logo" />
+          </a>
+        </div>
+        <nav className='navigation'>
+          <HiMenuAlt4 className={activeMobile ? 'off-menu' : 'menu-active'} onClick={handleClickActiveButton} />
+          <HiOutlineX className={activeMobile ? 'menu-active' : 'off-menu'} onClick={handleClickActiveButton} />
+          <ul className={activeMobile ? 'menu-items' : 'menu'}>
+            <li className='list-item'><a href="#home">Inicio</a></li>
+            <li className='list-item'><a href="#about">Sobre</a></li>
+            <li className='list-item'><a href="#projects">Projetos</a></li>
+            <li className='list-item'><a href="#services">Serviços</a></li>
+            <li className='list-item'><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
 
     </header >
   )

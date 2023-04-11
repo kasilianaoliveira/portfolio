@@ -2,7 +2,7 @@
 
   background: var(--background);
   padding: 6.375rem 60px;
-  height: 100vh;
+  height: 100%;
 
 }
 
@@ -79,6 +79,15 @@
 }
 
 
+@media (min-width: 1400px) {
+  .container-services {
+    height: 100vh;
+
+  }
+
+}
+
+
 @media (max-width: 1025px) {
 
   .title-detail-services {
@@ -94,10 +103,6 @@
 }
 
 @media (max-width: 769px) {
-  .container-services {
-    height: 100%;
-
-  }
 
   .content-services h1 {
     font-size: 44px;

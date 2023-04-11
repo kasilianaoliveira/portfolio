@@ -1,8 +1,7 @@
 .container-about {
   background: var(--background);
-  /* margin-top: 10rem; */
   padding: 10rem 0px;
-  height: 80vh;
+  height: 100%;
 }
 
 
@@ -48,6 +47,7 @@
   position: absolute;
   right: 98%;
   top: 95%;
+  /* margin-bottom: 20px; */
 }
 
 @media (max-width: 1200px) {
@@ -58,6 +58,10 @@
 }
 
 @media (max-width: 1025px) {
+  .container-about {
+    height: 100%;
+  }
+
 
   .title-detail {
     display: none;
