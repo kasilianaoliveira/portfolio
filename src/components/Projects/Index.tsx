@@ -1,7 +1,10 @@
 import React from 'react'
 import { Button } from '../Button/Index'
 import { Title } from '../Title/Index'
-import projetoImg from "../../assets/projeto.png"
+import ecommerceImg from "../../assets/ecommerce.png"
+import relifeImg from "../../assets/relife.png"
+import restaurantImg from "../../assets/restaurant.png"
+
 import GridImg from "../../assets/icon-grid.svg"
 import ArrowImg from "../../assets/icon-arrow.svg"
 import iconImg from "../../assets/icon.svg";
@@ -16,7 +19,7 @@ export const Projects = () => {
       <Title title='Projetos em destaque' />
       <div className="cards-projects">
         <div className="card">
-          <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
+          <img src={ecommerceImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
           <div className='card-infos'>
             <h3>E-commerce</h3>
             <span className='info'>
@@ -34,7 +37,7 @@ export const Projects = () => {
           </div>
         </div>
         <div className="card">
-          <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
+          <img src={relifeImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
           <div className='card-infos'>
             <h3>Relife</h3>
             <span className='info'>
@@ -51,7 +54,7 @@ export const Projects = () => {
           </div>
         </div>
         <div className="card">
-          <img src={projetoImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
+          <img src={restaurantImg} alt="Imagem de um projeto desenvolvido" className='img-card' />
           <div className='card-infos'>
             <h3>Restaurante online</h3>
             <span className='info'>
