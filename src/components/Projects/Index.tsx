@@ -33,7 +33,7 @@ export const Projects = () => {
               Veja mais
               <img src={ArrowImg} alt="" />
             </span>
-            <Button title="Abrir projeto" hrefOption='teste' />
+            <Button title="Abrir projeto" hrefOption='https://ecommerce-kappa-green.vercel.app/' />
           </div>
         </div>
         <div className="card">
@@ -50,7 +50,7 @@ export const Projects = () => {
               Veja mais
               <img src={ArrowImg} alt="" />
             </span>
-            <Button title="Abrir projeto" hrefOption='teste' />
+            <Button title="Abrir projeto" hrefOption='https://relife-lyart.vercel.app/' />
           </div>
         </div>
         <div className="card">
@@ -67,7 +67,7 @@ export const Projects = () => {
               Veja mais
               <img src={ArrowImg} alt="" />
             </span>
-            <Button title="Abrir projeto" hrefOption='teste' />
+            <Button title="Abrir projeto" hrefOption='https://restaurant-bay-eta.vercel.app/' />
           </div>
         </div>
       </div>
