@@ -4,7 +4,7 @@ import girlImg from "../../assets/girl.svg";
 import "./styles.css";
 
 //adicionar portfolio verdadeiro
-import portfolioPDF from "../../assets/portfolio.pdf"
+import portfolioPDF from "../../assets/kasiliana-curriculo.pdf"
 import { Title } from '../Title/Index';
 import { Button } from '../Button/Index';
 export const Home = () => {
