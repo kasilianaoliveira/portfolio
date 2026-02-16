@@ -3,11 +3,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Portfolio palette */
+  --purple-900: #01001A;
+  --purple-700: #1E0044;
+  --text: #E9DEFF;
+  --gradient-name-start: #8338EC;
+  --gradient-name-end: #B923FF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-purple-900: var(--purple-900);
+  --color-purple-700: var(--purple-700);
+  --color-text: var(--text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -22,5 +31,88 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes menu-bubble-grow {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-content-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.menu-bubble {
+  --bubble-size: 200vmax;
+  position: fixed;
+  right: calc(var(--bubble-size) / -2 + 1.5rem);
+  top: calc(var(--bubble-size) / -2 + 2.5rem);
+  width: var(--bubble-size);
+  height: var(--bubble-size);
+  border-radius: 50%;
+  background: var(--purple-900);
+  transform-origin: center center;
+  animation: menu-bubble-grow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.menu-content-in {
+  animation: menu-content-in 0.3s ease-out 0.25s forwards;
+  opacity: 0;
+}
+
+.menu-overlay-closing {
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+
+.menu-overlay-closing .menu-bubble,
+.menu-overlay-closing .menu-content-in {
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+
+@keyframes star-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(1.4);
+  }
+}
+
+.skills-star-pulse {
+  animation: star-pulse 2.2s ease-in-out infinite;
+}
+
+.skills-star-pulse-delay {
+  animation: star-pulse 2.2s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+.skills-tag {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--purple-700), var(--purple-700)) padding-box,
+    linear-gradient(90deg, #60A5FA, #A981FE) border-box;
+  border-radius: 9999px;
+  box-shadow: 0 0 14px rgba(168, 129, 254, 0.35);
 }
