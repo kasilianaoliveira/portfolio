@@ -1,9 +1,10 @@
 import star01 from "../../assets/star-01.svg";
 import star02 from "../../assets/star-02.svg";
 import wormSvg from "../../assets/worm.svg";
+import { Text } from "../Text";
 
-const SKILLS_ROW_1 = ["Python", "FastAPI", "Docker", "PostgreSQL", "Microsserviços"];
-const SKILLS_ROW_2 = ["React", "Typescript", "Nextjs", "Tailwind CSS"];
+const SKILLS_ROW_1 = ["Python", "FastAPI", "Docker", "PostgreSQL", "Node.js", "NestJS"];
+const SKILLS_ROW_2 = ["React", "Typescript", "Nextjs", "Tailwind CSS", "React Query"];
 
 function starSrc(s: { src?: string } | string) {
   return typeof s === "string" ? s : s.src;
@@ -27,16 +28,16 @@ export function Skills() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl">
-        <h2 className="mb-10 text-center text-3xl font-semibold tracking-tight text-white md:mb-14 md:text-4xl">
+        <Text classname="text-center text-white">
           Skills
-        </h2>
+        </Text>
 
         <div className="flex flex-col items-center gap-4 md:gap-5">
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {SKILLS_ROW_1.map((skill) => (
               <span
                 key={skill}
-                className="skills-tag rounded-full border px-4 py-2 text-sm font-medium text-white transition-transform duration-300 ease-out hover:scale-105 md:px-5 md:py-2.5 md:text-base"
+                className="skills-tag rounded-full border px-4 py-2 text-sm font-medium text-white transition-transform duration-300 ease-out hover:scale-105 md:px-5 md:py-2.5 md:text-base cursor-pointer"
               >
                 {skill}
               </span>

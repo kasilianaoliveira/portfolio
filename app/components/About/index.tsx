@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { Text } from "../Text";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,19 +16,19 @@ const CARD_BG_IMAGE = `url("data:image/svg+xml,%3Csvg width='120' height='120' v
 
 export function About() {
   return (
-    <section
-      className={`${montserrat.className} relative rounded-2xl px-6 py-8 md:px-10 md:py-20`}
+    <div
+      className={`${montserrat.className} rounded-2xl px-6 py-8 md:px-10 md:py-20`}
       id="sobre"
       style={{
         backgroundColor: "#e8ddf5",
         backgroundImage: CARD_BG_IMAGE,
       }}
     >
-      <div className="relative z-10 flex flex-col gap-6 md:flex-row md:items-start md:justify-between md:gap-10">
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
         <div className="min-w-0 flex-1">
-          <h2 className="mb-4 text-2xl font-semibold text-purple-900 md:text-3xl">
+          <Text classname="text-purple-700/80">
             Sobre mim
-          </h2>
+          </Text>
           <div className="mb-4 flex flex-wrap gap-2">
             {BADGES.map((label) => (
               <span
@@ -38,12 +39,25 @@ export function About() {
               </span>
             ))}
           </div>
-          <p className="max-w-2xl text-sm leading-relaxed text-purple-900/90 md:text-base">
-            Atuo em todo o ciclo do produto: da ideia ao deploy. Gosto de código
-            legível, testes e de trabalhar em equipe, acredito que o melhor
-            software nasce quando técnico e negócio conversam. Nos projetos,
-            busco equilibrar entre entregar valor rápido e manter a base
-            sustentável a longo prazo.
+          <p className="max-w-5xl text-sm leading-relaxed text-purple-900/90 md:text-base">
+            Desde criança, sempre fui apaixonada por tecnologia, mesmo sem saber exatamente qual caminho seguir
+            dentro desse universo tão amplo. Tudo começou quando ganhei meu primeiro computador dos meus pais.
+            A partir dali, mergulhei de vez nesse mundo fascinante: explorei design, criei meu primeiro site e
+            até me aventurei no YouTube com alguns tutoriais (rsrs).
+            <br />
+            Foi no terceiro ano do ensino médio que decidi cursar Sistemas de Informação. Na época, eu já fazia o
+            curso técnico em Logística e resolvi unir o útil ao agradável, buscando uma formação que conectasse
+            tecnologia e processos. Sem dúvidas, foi uma das melhores decisões que já tomei.
+            <br />
+            O que mais me motiva é poder ajudar pessoas por meio da tecnologia. Criar um produto que realmente
+            impacta a vida de alguém, tornando seu dia a dia mais simples e eficiente, é algo que me inspira
+            profundamente. Para mim, tecnologia vai além de código, é sobre gerar valor e transformar experiências.
+            <br />
+            Fora do ambiente profissional e acadêmico, participo ativamente de uma comunidade que organiza
+            eventos geek na minha cidade e em cidades vizinhas. Nosso objetivo é tornar esse universo mais
+            acessível, criando um espaço para quem ama a cultura nerd e geek se conectar, compartilhar
+            experiências e mostrar que ser geek não é algo negativo, mas sim algo criativo, divertido e cheio
+            de possibilidades.
           </p>
         </div>
         <div className="flex gap-4 md:flex-col md:gap-5">
@@ -61,6 +75,6 @@ export function About() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
