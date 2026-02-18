@@ -57,7 +57,7 @@ body {
 }
 
 .menu-bubble {
-  --bubble-size: 200vmax;
+  --bubble-size: 320vmax;
   position: fixed;
   right: calc(var(--bubble-size) / -2 + 1.5rem);
   top: calc(var(--bubble-size) / -2 + 2.5rem);
@@ -66,7 +66,7 @@ body {
   border-radius: 50%;
   background: var(--purple-900);
   transform-origin: center center;
-  animation: menu-bubble-grow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: menu-bubble-grow 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 .menu-content-in {
