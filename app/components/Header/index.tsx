@@ -45,7 +45,7 @@ export function Header() {
             alt="Kasiliana Oliveira"
             width={180}
             height={32}
-            className="h-8 w-auto"
+            className="h-6 md:h-8 w-auto"
             priority
           />
         </Link>
