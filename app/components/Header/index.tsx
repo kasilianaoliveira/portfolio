@@ -9,7 +9,8 @@ import logoImg from "../../assets/logo.png";
 
 const navLinks = [
   { href: "#sobre", label: "SOBRE MIM" },
-  { href: "#projetos", label: "PROJETOS" },
+  { href: "#experiencia", label: "EXPERIÊNCIA" },
+  { href: "#formacao", label: "FORMAÇÃO" },
   { href: "#skills", label: "SKILLS" },
   { href: "#contato", label: "CONTATO" },
 ];

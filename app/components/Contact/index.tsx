@@ -17,7 +17,7 @@ const CONTACTS = [
 
 export function Contact() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-10">
+    <div id="contato" className="flex flex-col items-center justify-center gap-4 py-10">
       <Text>Contato</Text>
       <div className="w-full px-4 md:px-8">
         <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

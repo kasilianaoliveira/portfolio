@@ -12,7 +12,7 @@ const ENTERPRISES = [
 
 export function Formation() {
   return (
-    <div>
+    <div id="formacao">
       <Text classname="text-center">Formação</Text>
       {ENTERPRISES.map((item) => (
         <div className="flex flex-col items-center justify-center 

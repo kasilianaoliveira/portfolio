@@ -28,7 +28,7 @@ const ENTERPRISES = [
 
 export function Career() {
   return (
-    <>
+    <div id="experiencia">
       <Text classname="text-center">Experiência</Text>
       {ENTERPRISES.map((item) => (
         <div className="flex flex-col items-center justify-center 
@@ -53,6 +53,6 @@ export function Career() {
           </div>
         </div>
       ))}
-    </>
+    </div>
   )
 }
