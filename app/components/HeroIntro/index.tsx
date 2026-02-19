@@ -1,4 +1,4 @@
-import { IBM_Plex_Mono, Montserrat } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import Image from "next/image";
 import fotoImg from "../../assets/me.png";
 
@@ -7,7 +7,6 @@ const ibmPlexMono = IBM_Plex_Mono({
   style: ["italic"],
   subsets: ["latin"],
 });
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 export function HeroIntro() {
 
@@ -31,7 +30,7 @@ export function HeroIntro() {
             <span>{"/>"}</span>
           </h1>
           <p
-            className={`${montserrat.className} text-lg leading-relaxed text-text max-w-3xl`}
+            className={`text-lg leading-relaxed text-text max-w-3xl`}
           >
             Engenheria de software que ama construir coisas e explorar as novidades do mundo da tecnologia.
           </p>

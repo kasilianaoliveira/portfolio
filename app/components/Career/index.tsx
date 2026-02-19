@@ -1,10 +1,8 @@
 import GreatPlace from "@/app/assets/great.jpg";
 import PetSi from "@/app/assets/pet-si.jpg";
 import VtexLab from "@/app/assets/vtex.webp";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { Text } from "../Text";
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const ENTERPRISES = [
   {
@@ -30,8 +28,8 @@ const ENTERPRISES = [
 
 export function Career() {
   return (
-    <div className={`${montserrat.className}`}>
-      <Text classname="text-center">Carreira</Text>
+    <>
+      <Text classname="text-center">Experiência</Text>
       {ENTERPRISES.map((item) => (
         <div className="flex flex-col items-center justify-center 
         bg-[#1E0044] mb-8 md:w-full m-auto rounded-2xl p-5 transition-transform duration-600
@@ -46,15 +44,15 @@ export function Career() {
               )}
               <div className="flex flex-col gap-1">
                 <span className="font-semibold">{item.name}</span>
-                <span className="text-sm text-purple-100/70 max-w-[2500px] text-wrap">{item.position}</span>
+                <span className="text-sm text-purple-100/70 text-wrap">{item.position}</span>
               </div>
             </div>
-            <div className="w-[160px] text-purple-100/50 text-end text-sm">
+            <div className="w-40px text-purple-100/50 text-end text-sm">
               <span>{item.year}</span>
             </div>
           </div>
         </div>
       ))}
-    </div>
+    </>
   )
 }

@@ -1,14 +1,11 @@
 "use client";
 
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 import logoImg from "../../assets/logo.png";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const navLinks = [
   { href: "#sobre", label: "SOBRE MIM" },
@@ -34,7 +31,7 @@ export function Header() {
   return (
     <>
       <header
-        className={`${montserrat.className} flex items-center justify-between py-5`}
+        className={`flex items-center justify-between py-5`}
       >
         <Link
           href="/"
